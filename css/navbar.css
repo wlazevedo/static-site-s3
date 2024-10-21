@@ -1,0 +1,65 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: 'Shrikhand', cursive;
+  color: #1a1919;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  cursor: pointer;
+}
+
+.sideMenu {
+  display: none;
+  visibility: hidden;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.menu.active {
+  right: 0;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.menu input[type="checkbox"] {
+  display: none;
+}
+
+.menu i {
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.menu i:hover {
+  opacity: .6;
+}
+
+.menu .bi-moon {
+  display: none;
+}
+
+.links a {
+  color: #9572ce;
+  font-family: 'Roboto', cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.links a:hover {
+  opacity: .5;
+}

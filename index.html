@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/darkMode.css">
+    <script src="js/main.js" defer></script>
+    <title>AWS Grupo 6</title>
+</head>
+
+<body>
+    <nav>
+        <style>
+            .logo {
+                background: linear-gradient(to right, #f5c647, #9572ce, #e26485);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                color: #9572ce;
+            }
+        </style>
+        
+        <div class="logo">Grupo 6 <i class="bi bi-cloud-check-fill"></i></div>
+        <div class="sideMenu">
+            <i id="open" class="bi bi-list"></i>
+            <i id="close" class="bi bi-x-circle"></i>
+        </div>
+        <div class="menu">
+            <input type="checkbox" name="change-theme" id="change-theme">
+            <label for="change-theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+            </label>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#services">Tecnologias</a>
+                <a href="#contact">Contato</a>
+            </div>
+        </div>
+    </nav>
+    <main>  
+        
+        <section class="home-container" id="home">
+            <div class="home-info">
+              <div class="text-container">
+                <h2 class="texto-branco">Descubra talentos sublimes em nosso site de<br>
+                    <span>divulgação de currículos</span></h2>
+                    <p class="texto-branco">Conectamos empresas e profissionais qualificados</p>
+                    <p class="texto-branco">em uma plataforma inovadora na nuvem.</p>                    
+              </div>
+            </div>
+            <img src="images/cloud-computing.jpg" alt="">
+        </section>
+
+        <section class="benefits-container" id="about">
+            <h3>Vantagens e benefícios de ter seu currículo na nuvem</h3>
+            <div class="benefits-cards">
+                <div class="card">
+                    <img src="images/benefits/flexibility.jpg" alt="">
+                    <h4>Acessibilidade</h4>
+                    <p class="texto-branco">Ao armazenar o currículo na nuvem, você pode acessá-lo de qualquer lugar e a qualquer momento,
+                         desde que tenha uma conexão à internet. Isso é especialmente útil se você precisar enviar seu currículo rapidamente ou se estiver se candidatando a oportunidades de emprego em diferentes locais.</p>
+                </div>
+                <div class="card">
+                    <img src="images/benefits/flexibility.jpg" alt="">
+                    <h4>Segurança</h4>
+                    <p class="texto-branco">Os serviços de nuvem oferecem recursos avançados de segurança para proteger seus dados. Isso inclui criptografia, autenticação de dois fatores e backups automáticos. Armazenar seu currículo na nuvem pode ser mais seguro do que mantê-lo apenas em um dispositivo físico, como um computador ou pendrive.</p>
+                </div>
+                <div class="card">
+                    <img src="images/benefits/strategic-value.jpg" alt="">
+                    <h4>Atualização fácil</h4>
+                    <p class="texto-branco">Quando seu currículo está na nuvem, é fácil atualizá-lo sempre que necessário. Você pode fazer alterações, adicionar novas informações ou remover seções obsoletas. Isso garante que você tenha sempre um currículo atualizado e relevante para enviar aos empregadores.</p>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-container">
+          <h3>Conheça nossa equipe</h3>
+          <div class="team-cards">
+              <div class="card-image">
+                  <div class="card" onclick="exibirCurriculo('curriculo1')">
+                    <img src="images/time/allan.jpg" alt="">
+                    <span>Allan</span>
+                  </div>
+                  <div class="card" onclick="exibirCurriculo('curriculo2')">
+                    <img src="images/time/tiago.jpg" alt="">
+                    <span>Tiago</span>
+                  </div>
+                  <div class="card" onclick="exibirCurriculo('curriculo3')">
+                    <img src="images/time/vinicius.jpeg" alt="">
+                    <span>Vinícius</span>
+                  </div>
+                  <div class="card" onclick="exibirCurriculo('curriculo4')">
+                    <img src="images/time/walax.jpeg" alt="">
+                    <span>Walax</span>
+                  </div>
+              </div>
+              <section id="curriculos">
+                  <div id="curriculo1">
+                    <h3 class="texto-branco">Allan</h3> 
+                    <br>                  
+                   
+                    <p class="texto-branco">Sou um Software Developer, tenho conhecimento em engenharia de telecomunicações e entusiasta da área de pesquisa em tecnologias, também venho desempenhando diversas funções para meu portfólio, como desenvolvimento de projetos com AWS, Blockchain , criação de interfaces front-end, back-end e programação em linguagens como C#, JavaScript, Vb.net, Solidity.</p>
+                    <br>                  
+
+                  </div>
+                  <div id="curriculo2">
+                    <h3 class="texto-branco">Tiago</h3>
+                    <br>                  
+                    <p class="texto-branco">Trabalhar em uma empresa no segmento de Informática ou Telecomunicações, tendo assim a oportunidade de obter experiência profissional e crescimento pessoal, desempenhando as tarefas designadas com eficiência e responsabilidade.</p>
+                    <br>                  
+
+                  </div>
+                  <div id="curriculo3">
+                    <h3 class="texto-branco">Vinícius</h3>    
+                    <br>                  
+                
+                    <p class="texto-branco">Sou um estudante da área de Desenvolvimento de Sistemas, com conhecimentos em robótica e entusiasta na área de design. Também tenho desempenhado diversas funções para construir meu portfólio, como o desenvolvimento de projetos com Arduino, criação de interfaces front-end e programação em linguagens como C#, PHP e Python. Além disso, venho aprimorando minhas habilidades interpessoais para me adaptar ao ambiente corporativo.</p>
+                    <br>                  
+
+                  </div>
+                  <div id="curriculo4">
+                    <h3 class="texto-branco">Walax</h3>      
+                    <br>                  
+              
+                    <p class="texto-branco">Sou um profissional de T.I e entusiasta em tecnologia, adquirindo experiência na área de operação e suporte. Desempenho diversas funções, como help desk, service desk, manutenção e infraestrutura de T.I. Tenho conhecimentos sólidos em gerenciamento e administração de ferramentas e aplicações essenciais para o ambiente corporativo. Atualmente, estou cursando Ciência da Computação na modalidade bacharelado, buscando aprimorar ainda mais meus conhecimentos na área.</p>
+                    <br>                  
+
+                  </div>
+              </section>
+          </div>
+      </section>
+      
+
+        <section class="services-container" id="services">
+          <h3>Tecnologias</h3>
+          <div class="services">
+            <div class="service">
+              <img src="images/services/s3.png" alt="">
+              <h3 class="texto-branco">S3 INTELLIGENT-TIERING</h3>
+              <p class="texto-branco">A classe de armazenamento Amazon S3 Intelligent-Tiering foi projetada para otimizar os custos de armazenamento ao mover automaticamente os dados para o nível de acesso mais econômico quando os padrões de acesso são alterados. A S3 Intelligent-Tiering armazena objetos automaticamente em três camadas de acesso: uma camada otimizada para acesso frequente, uma camada de custo mais baixo otimizada para acesso infrequente e uma camada de custo muito baixo otimizada para dados raramente acessados.</p>
+            </div>
+            <div class="service">
+              <img src="images/services/cf.png" alt="">
+              <h3 class="texto-branco">AMAZON CLOUDFRONT</h3>
+              <p class="texto-branco">O Amazon CloudFront é um serviço de CDN que fornece distribuição de conteúdo rápida e confiável, acelerando o acesso a sites e aplicativos por meio de uma rede global de servidores. Ele ajuda a reduzir a latência, aumentar a velocidade de carregamento e proteger contra picos de tráfego, melhorando a experiência do usuário.</p>
+            </div>
+            <div class="service">
+              <img src="images/services/cw3.png" alt="">
+              <h3 class="texto-branco">AMAZON CLOUDWATCH</h3>
+              <p class="texto-branco">O Amazon CloudWatch é um serviço de monitoramento e observabilidade que permite coletar e rastrear métricas, logs e eventos de recursos e aplicativos na nuvem da AWS. Com o CloudWatch, você pode obter insights e tomar ações para manter o desempenho e a disponibilidade dos serviços em execução na AWS.</p>
+            </div>
+            <div class="service">
+              <img src="images/services/53.png" alt="">
+              <h3 class="texto-branco">AMAZON ROUTE 53</h3>
+              <p class="texto-branco">O Amazon Route 53 é um serviço de DNS altamente disponível e escalável da AWS. Ele permite registrar, gerenciar e direcionar o tráfego de nomes de domínio para recursos da Internet, como sites, aplicativos e serviços em nuvem. Com recursos avançados de resolução de DNS, roteamento de tráfego e integração com outros serviços da AWS, o Route 53 oferece um serviço confiável e flexível para o gerenciamento de infraestrutura de DNS.</p>
+            </div>
+          </div>
+          </section>
+
+          <section class="contact-container" id="contact">
+            <h3 class="texto-branco">Entre em contato</h3>
+            <br>
+            <div class="service">
+              <i class="bi bi-telephone-fill"></i>
+              <h3 class="texto-branco">Telefones</h4>
+              <p class="texto-branco">
+                +55 19 98736-6384
+                <br>
+                +55 91 8168-6404
+                <br>
+                +55 21 98790-1661
+                <br>
+                +351 925 553 178
+              </p>
+            </div>
+            <div class="service">
+              <br>
+              <i class="bi bi-envelope-fill"></i>
+              <h3 class="texto-branco">Email</h4>
+              <p class="texto-branco">awscloudgrupo6@gmail.com</p>
+              <br>
+            </div>
+          </div>
+          <div class="service">
+            <h3 class="texto-branco">Envie uma mensagem</h4>
+            <br>
+            <form>
+              <input type="text" placeholder="Seu nome" class="texto-branco">
+              <br>
+              <input type="email" placeholder="Seu email" class="texto-branco">
+              <br>
+              <textarea placeholder="Sua mensagem" class="texto-branco"></textarea>
+              <br>
+              <button type="submit" class="texto-branco">Enviar</button>
+              <br>
+            </form>
+          </div>
+          </section>
+          <footer>
+            <p class="texto-branco">&copy; 2023 AWS Grupo 6. Todos os direitos reservados.</p>
+          </footer>
+          
