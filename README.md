@@ -4,6 +4,7 @@ Este projeto consiste em um website est√°tico hospedado na AWS com a implementa√
 
 ## Arquitetura
 
+![Arquitetura do Projeto](images/imagem1.png)
 
 A arquitetura utilizada inclui:
 
